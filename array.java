@@ -1,3 +1,7 @@
+//Array tradicional = Vetor diferente de ArrayList
+//Arrays sao colecoes de tamanho fixo que armazenam elementos do mesmo tipo,
+//acesso rapido por indice, mas adicionar ou remover elementos é limitado.
+
 public class array {
 
     public static void main(String[] args) {
