@@ -1,5 +1,7 @@
 public class VetorLongTest {
 
+
+    // Tempo de execução: 2405ms
     private static final int TAMANHO = 100000; //criando uma constante
 
     public static void main(String[] args) {
