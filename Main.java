@@ -1,23 +1,24 @@
-//public class Main {
-//    public static void main(String[] args) { //objeto
-//        Pessoa p = new Pessoa(); // usando a palavra new, aqui eu crio um objeto do tipo pessoa
-//        p.nome = "João"; // aqui e embaixo eu manipulo ele do jeito que eu quiser
-//        p.idade = 28;
-//        System.out.println(p.nome);
-//        System.out.println(p.idade);
-//        System.out.println("Meu nome é " + p.nome + " e tenho " + p.idade + " anos de !");
-//    }
-//}
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-
+        int n = 2;
         ArrayList<Integer> idades = new ArrayList<>(); // isso é tipagem de coleções
 
         idades.add(20);
         idades.add(30);
         System.out.println(idades.get(1)); //saida 30
+
+
+        for (int i = 0; i < n; i++){
+            System.out.println(i); // O(n)
+        }
+
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                System.out.println(i + j); // O(n2) ao quadrado
+            }
+        }
 
     }
 }
