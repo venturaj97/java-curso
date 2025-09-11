@@ -2,6 +2,8 @@ import java.util.HashMap;
 
 public class HashMapTest {
     //Tempo de execução: 51ms
+    //Tempo de execução: 21ms 2.0
+
     private static final int TAMANHO = 1000000;
 
     public static void main(String[] args) {
@@ -13,9 +15,10 @@ public class HashMapTest {
         }
         long inicio = System.currentTimeMillis();
 
+        int codigoASerEncontrado = TAMANHO;
 
         for (int qtd = 0; qtd < TAMANHO; qtd++) {
-            Produto p = mapa.get(qtd);
+            Produto p = mapa.get(codigoASerEncontrado);
         }
 
         long fim = System.currentTimeMillis();
